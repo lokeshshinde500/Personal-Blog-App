@@ -9,7 +9,9 @@ const app = express();
 const port = constant.PORT;
 
 // cors middleware
-app.use(cors());
+app.use(cors({
+  origin: '*',
+}));
 
 // parse json data
 app.use(express.json());
